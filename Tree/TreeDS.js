@@ -68,7 +68,7 @@ function Tree(){
 
 
 
-/*var tree = new Tree();
+var tree = new Tree();
 tree.put(5);
 tree.put(3);
 tree.put(6);
@@ -79,4 +79,4 @@ var b = tree.get(3);
 console.log(a);
 console.log(b);
 
-tree.inOrder();*/
+tree.inOrder();
