@@ -12,13 +12,18 @@ function Node(val){
 
 function Tree(){
 	this.root;
-	
+
+	this.getRoot = function(){
+		return this.root;
+	}
+
 	this.put = function(val){
-		this.root = put(root,val);
+		this.root = put(this.root,val);
 	}
 	this.inOrder = function(){
 		inOrder(this.root);
 	}
+	
 	this.get = function(val){
 		var x = this.root;
 		while(x!=undefined){
@@ -63,7 +68,7 @@ function Tree(){
 
 
 
-var tree = new Tree();
+/*var tree = new Tree();
 tree.put(5);
 tree.put(3);
 tree.put(6);
@@ -74,4 +79,4 @@ var b = tree.get(3);
 console.log(a);
 console.log(b);
 
-tree.inOrder();
+tree.inOrder();*/
