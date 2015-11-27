@@ -1,6 +1,14 @@
 # Javascript-and-Data-Structure
+
 Arrays
-List
+
+Data Structure
  - Stack
- -List
-tree
+ - List
+ - LinkedList
+ - Hashing
+
+Tree
+- Insert and Get
+- Height
+- SIze
