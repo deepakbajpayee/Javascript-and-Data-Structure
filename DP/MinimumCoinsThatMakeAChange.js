@@ -28,7 +28,7 @@ function minimumCoinsDP(coins,value){
 			}
 		}
 	}
-	console.log(T);
+	//console.log(T);
 	return T[coins.length][value];
 }
 
