@@ -14,7 +14,8 @@ writing a good hash function is more of art than programming.
 function simpleHashFunction(data){
 	var total = 0;
 	for(var i=0;i<data.length;++i){
-		total += data.charCodeAt(i);//The charCodeAt() method returns the numeric Unicode value of the character at the given index 
+		total += data.charCodeAt(i);
+		//The charCodeAt() method returns the numeric Unicode value of the character at the given index 
 	}
 	return total % this.table.length;
 }
