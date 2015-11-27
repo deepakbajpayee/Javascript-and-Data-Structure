@@ -1,3 +1,7 @@
+/**
+This program calculates minimum number of coins needed to make a sum.
+**/
+
 Array.Matrix = function(numrows,numcolumns,defaultValue){
 	var arr = [];
 	for(var i=0;i<numrows;i++){
