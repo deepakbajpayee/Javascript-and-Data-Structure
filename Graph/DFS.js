@@ -32,12 +32,14 @@ function DFS(graph,source){
 		return path;
 	}
 
-	console.log(edgeTo);
-	console.log(marked);
+	//console.log(edgeTo);
+	//console.log(marked);
 }
 
-
-var mygraph = new Graph(10);
+//If you don't use Node.js You have to copy the code of GraphDS.js in this file.
+var mygraph = require("./GraphDS");
+//Rememeber : This is the size of graph.
+mygraph.instantiate(10);
 mygraph.addEdge(1,5);
 mygraph.addEdge(2,3);
 mygraph.addEdge(4,5);
@@ -47,5 +49,5 @@ mygraph.addEdge(5,8);
 mygraph.addEdge(4,7);
 
 var dfs = new DFS(mygraph,1);
-console.log(dfs.path(10));
+console.log(dfs.path(9));
 
