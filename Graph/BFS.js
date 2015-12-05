@@ -62,7 +62,9 @@ function BFS(graph,source){
 	console.log(marked);
 }
 
-var mygraph = new Graph(10);
+//If you don't use Node.js You have to copy the code of GraphDS.js in this file.
+var mygraph = require("./GraphDS");
+mygraph.instantiate(10);
 mygraph.addEdge(1,2);
 mygraph.addEdge(2,3);
 mygraph.addEdge(4,5);
