@@ -111,7 +111,7 @@ function Queue(){
 
 
 //Binary Search tree
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(10);
 tree.put(7);
 tree.put(14);
