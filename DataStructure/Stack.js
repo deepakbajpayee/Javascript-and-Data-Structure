@@ -33,7 +33,7 @@ Stack.prototype.size = function(){
 }
 
 
-var mystack = new Stack();
+/*var mystack = new Stack();
 console.log(mystack);
 mystack.push(1);
 mystack.push(2);
@@ -45,4 +45,6 @@ mystack.push(3);
 mystack.push(4);
 console.log(mystack.pop());
 console.log(mystack);
-console.log(mystack.isEmpty())
+console.log(mystack.isEmpty());
+*/
+module.exports = Stack;
