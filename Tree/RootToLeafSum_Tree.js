@@ -35,7 +35,7 @@ function rootToLeafSum(root,sum,result){
 var result = [];
 var sum = 21;
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(13);
 tree.put(3);
 tree.put(23);
