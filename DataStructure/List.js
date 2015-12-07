@@ -48,7 +48,7 @@ function toString(){
 	return this.dataStore;
 }
 
-var names = new List();
+/*var names = new List();
 names.insert("tucky");
 names.insert("deepak");
 names.insert("manish");
@@ -56,5 +56,5 @@ names.insert("abc");
 names.remove("abc");
 console.log(names);
 console.log(names.length())
-
+*/
 
