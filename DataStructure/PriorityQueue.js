@@ -84,7 +84,7 @@ var MaxPriorityQueue  = (function(){
 })();
 
 
-var maxpq = MaxPriorityQueue;
+/*var maxpq = MaxPriorityQueue;
 maxpq.instantiate(15);
 
 maxpq.insert(14);
@@ -102,6 +102,6 @@ maxpq.insert(13);
 console.log(maxpq.delMax());
 console.log(maxpq.delMax());
 console.log(maxpq.delMax());
-console.log(maxpq.isEmpty());
+console.log(maxpq.isEmpty());*/
 
 /**********************************************END**OF**PROGRAM********************************************************************/
