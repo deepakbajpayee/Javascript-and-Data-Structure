@@ -1,3 +1,4 @@
+
 function HashTable(){
 	this.table = new Array(137);
 	this.simpleHashFunction = simpleHashFunction;
