@@ -2,30 +2,35 @@
 /*
 This program creates a tree data structure in which items can be inserted 
 and we can search an element. 
+
+Tree is defined as a module so that it can be exported to different module.
+_ underscore marked are private function.
 */
-function Node(val){
-	this.val = val;
-	this.left;
-	this.right;
-}
 
 
-function Tree(){
-	this.root;
+var Tree = (function(){
+	
+	function Node(val){
+		this.val = val;
+		this.left;
+		this.right;
+	};
 
-	this.getRoot = function(){
-		return this.root;
+	var root;
+
+	var getRoot = function(){
+		return root;
 	}
 
-	this.put = function(val){
-		this.root = put(this.root,val);
+	var put = function(val){
+		root = _put(root,val);
 	}
-	this.inOrder = function(){
-		inOrder(this.root);
+	var inOrder = function(){
+		_inOrder(root);
 	}
 	
-	this.get = function(val){
-		var x = this.root;
+	var get = function(val){
+		var x = root;
 		while(x!=undefined){
 			var cmp = val-x.val;
 			if(cmp==0){
@@ -42,14 +47,14 @@ function Tree(){
 	}
 
 
-	function put(x,val){
+	function _put(x,val){
 		if(x == undefined) return new Node(val);
 		var cmp = val - x.val;
 		if(cmp>0){
-			x.right = put(x.right,val);
+			x.right = _put(x.right,val);
 		}
 		else if(cmp<0){
-			x.left = put(x.left,val);
+			x.left = _put(x.left,val);
 		}
 		else{
 			x.val = val;
@@ -58,17 +63,24 @@ function Tree(){
 	}
 
 
-	function inOrder(root){
+	function _inOrder(root){
 		if(root==undefined)return;
-		inOrder(root.left);
+		_inOrder(root.left);
 		console.log(root.val);
-		inOrder(root.right);
+		_inOrder(root.right);
 	}
-}
+	return{
+		put:put,
+		get:get,
+		getRoot:getRoot,
+		inOrder:inOrder
+	};
+})();
+
+module.exports = Tree;
 
 
-/*
-var tree = new Tree();
+/*var tree = Tree;
 tree.put(5);
 tree.put(3);
 tree.put(6);
