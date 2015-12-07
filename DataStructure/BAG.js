@@ -50,7 +50,7 @@ function Bag(){
 	}
 }
 
-var mybag = new Bag();
+/*var mybag = new Bag();
 mybag.add(3);
 mybag.add(5);
 mybag.add(7);
@@ -60,4 +60,4 @@ while(iterator.hasNext()){
 	console.log(iterator.next().val);
 }
 
-console.log(mybag.remove().val);
+console.log(mybag.remove().val);*/
