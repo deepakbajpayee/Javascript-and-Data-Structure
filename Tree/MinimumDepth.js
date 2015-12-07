@@ -17,7 +17,7 @@ function MinimumDepth(root){
 	return Math.min(MinimumDepth(root.left),MinimumDepth(root.right))+1;
 }
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(1);
 tree.put(3);
 tree.put(4);
