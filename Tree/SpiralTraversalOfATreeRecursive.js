@@ -35,14 +35,11 @@ function height(root){
 }
 
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(13);
 tree.put(3);
 tree.put(1);
 tree.put(5);
 tree.put(23);
-tree.put(3tree.put(3);
-tree.put(3);
-tree.put(3);3);
 
 printSpiral(tree.getRoot());
