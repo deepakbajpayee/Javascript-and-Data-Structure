@@ -21,8 +21,9 @@ Dictionary.prototype.showAll = function(){
 	}
 }
 
+/*
 var dictionary = new Dictionary();
 dictionary.add("1","Lucky");
 dictionary.add("2","Tucky");
 console.log(dictionary.find("1"));
-dictionary.showAll();
+dictionary.showAll();*/
