@@ -25,7 +25,7 @@ function removeHalfNode(root){
 	return root;
 }
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(5);
 tree.put(3);
 tree.put(4);
