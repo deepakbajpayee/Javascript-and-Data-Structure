@@ -48,7 +48,7 @@ function ZigZagTraversalTree(root){
 	}
 }
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(5);
 tree.put(2);
 tree.put(1);
@@ -56,5 +56,5 @@ tree.put(4);
 tree.put(7);
 tree.put(6);
 tree.put(8);
-//ZigZagTraversalTree(tree.getRoot());
+ZigZagTraversalTree(tree.getRoot());
 
