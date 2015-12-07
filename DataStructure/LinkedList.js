@@ -42,11 +42,11 @@ LinkedList.prototype.remove = function(){
 }
 
 
-var list = new LinkedList();
+/*var list = new LinkedList();
 list.add(5);
 list.add(10);
 list.add(15);
 console.log("Item removed is : "+list.remove().data);
 console.log("Head of list is : "+list.getFirst().data);
 list.add(30);
-console.log("Head of list is : "+list.getFirst().data);
+console.log("Head of list is : "+list.getFirst().data);*/
