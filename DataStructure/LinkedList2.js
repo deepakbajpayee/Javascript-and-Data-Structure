@@ -51,8 +51,8 @@ function remove(item){
 }
 
 
-var citites = new LList();
+/*var citites = new LList();
 citites.insert("Delhi","head");
 citites.insert("Mumbai","Delhi");
 citites.remove("Delhi");
-citites.display();
+citites.display();*/
