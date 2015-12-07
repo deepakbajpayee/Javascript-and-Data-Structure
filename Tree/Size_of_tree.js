@@ -7,7 +7,7 @@ function size(root){
 	return 1+leftHeight+rightHeight;
 }
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(3);
 tree.put(1);
 tree.put(2);
