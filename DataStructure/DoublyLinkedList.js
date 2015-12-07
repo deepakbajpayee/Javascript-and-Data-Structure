@@ -160,7 +160,7 @@ DoubleLinkedList.prototype.forEach = function(fn){
 
 
 
-var doublelinkedlist = new DoubleLinkedList();
+/*var doublelinkedlist = new DoubleLinkedList();
 doublelinkedlist.add(13);
 doublelinkedlist.add(23);
 doublelinkedlist.add(33);
@@ -170,7 +170,7 @@ doublelinkedlist.delete(2);
 doublelinkedlist.forEach(function(value){
 	console.log(value);
 });
-
+*/
 
 
 
