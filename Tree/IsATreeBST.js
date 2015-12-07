@@ -10,7 +10,7 @@ function isTheTreeBST(root,min,max){
 	else return isTheTreeBST(root.left,min,root.data)&&isTheTreeBST(root.right,root.data,max);
 }
 
-var tree = new Tree();
+var tree = require('./TreeDS');
 tree.put(3);
 tree.put(2);
 tree.put(5);
