@@ -32,6 +32,8 @@ Queue.prototype.isEmpty = function(){
 }
 
 
+module.exports = Queue;
+
 /*var queue = new Queue();
 queue.enqueue(1);
 queue.enqueue(2);
