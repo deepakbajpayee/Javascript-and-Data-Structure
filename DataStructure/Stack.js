@@ -32,6 +32,11 @@ Stack.prototype.size = function(){
 	return this.top;
 }
 
+Stack.prototype.peek = function(){
+	var index = this.top -1;
+	return this.store[index];
+}
+
 
 /*var mystack = new Stack();
 console.log(mystack);
